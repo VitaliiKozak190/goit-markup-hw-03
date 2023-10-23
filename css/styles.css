@@ -42,17 +42,16 @@ p {
 button {
   cursor: pointer;
 }
-img {
-  display: block;
-}
+
 /* .section{
     padding: 120px 0; */
-}
-/* /* .section {
+
+ /* .section {
   padding-top: 60px;
-  padding-bottom: 60px; */
+  padding-bottom: 60px;
+ } */
 .container {
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -72,7 +71,7 @@ img {
    border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
-  height: 72px;
+  /* height: 72px; */
 }
 .header-box {
   /* max-width: 1158px; */
@@ -216,7 +215,7 @@ img {
 /* =========SECTION 2 OUR STRANGTHS =========*/
 .our-strangths-section {
   height: 344px;
-  padding: 120px 141px;
+  padding: 120px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -231,7 +230,6 @@ img {
   overflow: hidden;
 }
 .our-strangths-box{
- max-width: 1158px;
 }
 
 
@@ -267,6 +265,8 @@ width: 264px;
 /* =======SECTION 3 OUR TEAM ========*/
 .section-team {
   background: #f4f4fd;
+/* height: 732px; */
+  padding: 120px 0;
 }
 /* .menu-our-team {
   display: flex;
@@ -280,9 +280,13 @@ width: 264px;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .title-card-team {
   color: #2e2f42;
+  text-align: center;
+  margin-top: 32px;
+
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -290,6 +294,9 @@ width: 264px;
 }
 .text-card-team {
   color: #434455;
+  text-align: center;
+  margin-bottom: 32px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -297,52 +304,100 @@ width: 264px;
 }
 .list-team-photo {
   background: #fff;
+  width: calc((100% - 72px)/4);
+  flex-wrap: wrap;
 }
-
+.our-team-info {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+ .menu-our-team {
+  display: flex;
+  gap: 24px;
+ }
 /* =======/ SECTION 3 OUR TEAM ========*/
 
 /*========= Section 4-Portfolio========= */
 
 .section-portfolio {
-  background: #fff;
+  background-color: #ffffff;
+  padding: 120px 0;
+}
+.our-portfolio-box {
+   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: 100%;
 }
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 111.111%;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .title-project-portfolio {
-  color: #2e2f42;
+   color: #2e2f42;
+  text-align: left;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 120%;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
+.portfolio-project-info {
+   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: 100%;
+  align-items: center;
+}
+
+
 .text-project-portfolio {
-  color: #434455;
+  color: var(--SLATE, #434455);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.32px;
 }
+.
 .item-our-portfolio {
-  width: calc((100% - 32px) / 3);
-}
-.menu-our-portfolio {
+  background: var(--WHITE, #ffffff);
+  width: calc((100% - 48px) / 3);
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  gap: 32px;
+}
+.list-our-portfolio {
+   background: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+row-gap: 48px;
+column-gap: 24px;
+p
 }
 /*=========/ Section 4-Portfolio========= */
 
 /*=============== FOOTER ================*/
 
 .footer-section {
-  background: #2e2f42;
+   background: var(--NAVY-BLUE, #2e2f42);
+  height: 312px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer-style-box{
 }
 .logo-footer {
   color: #4d5ae5;
@@ -352,6 +407,9 @@ width: 264px;
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .text-footer {
@@ -360,6 +418,7 @@ width: 264px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 .footer-logo-selector {
   color: #f4f4fd;
