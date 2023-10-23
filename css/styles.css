@@ -65,6 +65,7 @@ img {
 
 .header-nav, .menu-nav {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 .header {
@@ -84,6 +85,9 @@ img {
 .menu-address {
   display: flex;
   gap: 40px;
+}
+.item-navigation {
+  padding: 24px 0;
 }
 .header-logo{
   margin-right: 76px;
@@ -291,6 +295,7 @@ width: 264px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .text-card-team {
   color: #434455;
@@ -306,6 +311,7 @@ width: 264px;
   background: #fff;
   width: calc((100% - 72px)/4);
   flex-wrap: wrap;
+  border-radius: 0px 0px 4px 4px;
 }
 .our-team-info {
 display: flex;
@@ -313,6 +319,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 8px;
+padding: 32px 0;
 }
  .menu-our-team {
   display: flex;
@@ -369,7 +376,7 @@ gap: 8px;
 .
 .item-our-portfolio {
   background: var(--WHITE, #ffffff);
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px)/3); 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
